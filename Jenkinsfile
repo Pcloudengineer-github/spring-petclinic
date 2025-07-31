@@ -34,7 +34,7 @@ pipeline {
                     sh 'mvn sonar:sonar \
                         -Dsonar.projectKey=Pcloudengineer-github_spring-petclinic \
                         -Dsonar.organization=pcloudengineer-github \
-                        -Dsonar.host.url=https://sonarcloud.io \
+                        -Dsonar.host.url=https://sonarcloud.io/ \
                         -Dsonar.login=d883cc1a20c40d1eadea1a15a3d2ee319383150e'
                 }
             }
