@@ -32,10 +32,10 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarCloud') { // Matches SonarQube server name in Jenkins config
                     sh 'mvn sonar:sonar \
-                        -Dsonar.projectKey=YourProjectKey \
-                        -Dsonar.organization=YourOrgKey \
+                        -Dsonar.projectKey=spring-petclinic \
+                        -Dsonar.organization=Pcloudengineer-github \
                         -Dsonar.host.url=https://sonarcloud.io \
-                        -Dsonar.login=$SONAR_TOKEN'
+                        -Dsonar.login=d883cc1a20c40d1eadea1a15a3d2ee319383150e'
                 }
             }
         }
